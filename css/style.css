@@ -1,0 +1,259 @@
+ /* すべてのページに適用される設定 */
+html {
+     font-size: 17px;
+     font-family: sans-serif;
+}
+html,body{
+     width: 100%;
+     overflow-x: hidden;
+}
+*{
+box-sizing: border-box;
+}
+body { 
+    margin: 0 0 0 0;  
+}
+/*見出しのデザイン*/
+h1{
+     font-family: "Yu Mincho" , "Hiragino Mincho ProN" , serif;
+     font-weight: 700;
+     letter-spacing: 0.15em;
+}
+h2{
+     font-family: "Yu Mincho" , "Hiragino Mincho ProN" , serif;
+     font-weight: 600;
+     letter-spacing: 0.08em;
+}
+p{
+     font-size:1rem;
+     line-height: 2;
+}
+li, td {
+     line-height: 1.7;
+}
+strong{
+     color: #538631;
+     font-weight: 600;
+     font-size: 1.1rem;
+     letter-spacing: 0.05em;
+}
+a:link {
+     color: #538631;
+     text-decoration: none;
+}
+a:visited {
+     color: #538631;
+     text-decoration: none;
+}
+a:hover {
+     color: #538631;
+     text-decoration: underline;
+}
+a:active {
+     color: #538631;
+     text-decoration: underline;
+}
+ /* すべてのページに適用 ヘッダー */
+  .logo {
+     text-align: center;    
+}
+.logo img{
+     width: 100%;
+     height: auto;
+     display: block;
+}
+ .header {
+     padding-top: 7%;
+     background-image: url(../images/stripe8.jpg);
+     background-repeat: repeat-x;
+ } 
+ .banner-area{
+     width: 100%;
+     margin-left: calc(50%-50%);
+ }
+ .banner     {
+     width: 100%;
+     display: block;
+ }
+ 
+.nav ul {
+     margin: 40px 0 0 0;
+     padding: 0;
+     list-style-type: none;
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+}
+.nav a:link {
+     color: #2f4e1b;
+}
+.nav a:visited {
+     color: #2f4e1b;
+}
+.nav a:hover {
+     text-decoration: none;
+}
+.nav a:active {
+     text-decoration: none;
+}
+.nav a {
+     font-weight: 500;
+     letter-spacing: 0.15em;
+     font-size: 1rem;
+     text-transform: uppercase;
+}
+
+ /* すべてのページに適用 ヒーロー */
+ .hero {
+     width: 100%;
+     min-height: 500px;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     background-size: cover;
+     background-position: center;
+     padding: 100px 0;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     color: #FFFFFF;
+     text-align: center;
+} 
+.hero.index {
+     padding: 247px 0;
+     background-image:
+url(../images/home-hero3.png)    
+}
+.hero.access {
+     background-image: url(../images/access-hero3.jpg);
+     margin-bottom: 40px;
+}
+.hero.menu {
+     background-image: url(../images/menu-hero4.jpg);
+     margin-bottom: 40px;
+}
+.hero.contact {
+     background-image: url(../images/conntact-hero3.jpg);
+     margin-bottom: 40px;
+}
+.map-image img{
+     width: 100vw;
+     margin-left:  calc(50% - 50vw);
+}
+.map-image img{
+     width: 100%;
+     display: block;
+}
+/* すべてのページに適用 メイン */
+main {
+     margin: 90px auto 90px auto;
+     max-width: 1000px;
+     display: block;
+}
+main h2 {
+    margin: 60px 0 40px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #417234; 
+    padding: 0 0 30px 0; 
+    color: #417234;
+    font-size: 1.3rem;
+}
+
+ /* すべてのページに適用 フッター */
+ .gotop {
+     text-align: center;
+}
+.copyright {
+     margin-top: 20px;
+     margin-bottom: 0;
+     padding-top: 75px;
+     padding-bottom: 75px; 
+     background-color: #2f4e1b;
+     color: #FFFFFF; 
+     text-align: center;
+}
+
+/* 個別のスタイル */
+/* index.html */
+.home-title{
+     margin: 60px 0 40px 0;
+     padding-bottom: 15px;
+     border-bottom: 2px solid #417234;
+     color: #417234;
+     font-size: 1.3rem;
+     font-weight: 600;
+     letter-spacing: 0.15em;
+}
+.logo-whale img{
+     width: 100%;
+     max-width: none;
+     height: auto;
+     display: block;
+     margin: 50px auto;
+     text-align: center;
+}
+.home-title{
+     font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+     font-weight: 600;
+     letter-spacing: 0.15em;
+}
+.shop-info {
+     border-collapse: collapse;
+     width: 100%;
+     border: 3px solid #538631;
+}  
+.shop-info th {
+     width: 112px;
+     text-align: left;
+     vertical-align: top;
+     background-color: #eaf5df;
+     color: #2f4e1b;
+}
+.shop-info td {
+     border: 2px solid #538631;
+     padding: 20px;
+} 
+.shop-info th{
+     width: 112px;
+     text-align: left;
+     vertical-align: top;
+}
+/* menu.html */
+
+.items img{
+     width: 100%;
+     height: auto;
+     display: block;
+}
+.items {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px;
+}
+/* contact.html */
+form {
+margin: 0 auto;
+max-width: 1000px;
+}
+input[type="text"], textarea {
+padding: 30px;
+width: 30%;
+font-size: 1rem;
+}
+textarea {
+height: 100px;
+}
+.submit {
+text-align: center;
+}
+input[type="submit"] {
+border: none;
+padding: 30px;
+width: 200px;
+background-color: #2f4e1b;
+color: #ffffff;
+font-size: 1rem;
+}
